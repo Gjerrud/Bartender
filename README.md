@@ -1,2 +1,2 @@
-# Bartender (Norwegian)
-Application for drink mixing with instructions and ingredients
+# Bartender
+Application for drink mixing with instructions and ingredients. Developed for norwegian users.
