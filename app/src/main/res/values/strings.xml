@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bartender</string>
+    <string name="ny_name">Opprett ny drink</string>
+    <string name="ny">NY</string>
+    <string name="fav">Listen er tom\n4+ stjerner er favoritter</string>
+
+    <string-array name="test_array">
+        <item>Test 1</item>
+        <item>Test 2</item>
+        <item>Test 3</item>
+    </string-array>
+</resources>

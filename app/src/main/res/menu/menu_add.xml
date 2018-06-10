@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DrinkActivity">
+
+    <item
+        android:id="@+id/mitLagre"
+        android:icon="@drawable/ic_action_save"
+        android:orderInCategory="102"
+        android:title="Lagre"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/mitClear"
+        android:icon="@drawable/ic_action_reload_white"
+        android:orderInCategory="101"
+        android:title="Tøm felter"
+        app:showAsAction="ifRoom">
+
+    </item>
+</menu>

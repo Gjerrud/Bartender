@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtspinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#5A76A1"
+    android:backgroundTint="#5A76A1"
+    android:gravity="center"
+    android:text="Highball"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="@color/lightblue"
+    android:textSize="20sp" />

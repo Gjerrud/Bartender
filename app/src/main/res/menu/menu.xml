@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/mitNy"
+        android:icon="@drawable/ic_action_add_white"
+        android:orderInCategory="102"
+        android:title="Legg til ny drink"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/mitRediger"
+        android:icon="@drawable/ic_action_edit_white"
+        android:orderInCategory="103"
+        android:title="Rediger"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mitSlett"
+        android:icon="@drawable/ic_action_trash_white"
+        android:orderInCategory="104"
+        android:title="Slett"
+        app:showAsAction="always"></item>
+
+</menu>

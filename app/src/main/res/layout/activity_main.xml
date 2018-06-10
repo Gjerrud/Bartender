@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aleksander.bartender.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3285B8"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@android:color/holo_orange_light"
+            app:tabSelectedTextColor="@android:color/holo_orange_light"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:tabTextColor="@android:color/background_light" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearleft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_drawer"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_drawer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif"
+                        android:text="Drink navn"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="36sp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitEnd"
+                        android:visibility="gone"
+                        app:srcCompat="@android:drawable/btn_dialog" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX=".6"
+                        android:scaleY=".6"
+                        android:theme="@style/RatingBar"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rloMainSprit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/imgSprit"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/drinks_33" />
+
+                    <TextView
+                        android:id="@+id/txtSpritTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:text="Sprit"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSprit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Navn på sprit"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rloMainBlandevann"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/imgBlandevann"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/coke" />
+
+                    <TextView
+                        android:id="@+id/txtBlandevannTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:text="Blandevann"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBlandevann"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Navn på blandevann"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rloMainIs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/imgIs"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/snowflake" />
+
+                    <TextView
+                        android:id="@+id/txtIsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:text="Is"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtIs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Type is"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rloMainGlass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/imgGlass"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/drinks_04" />
+
+                    <TextView
+                        android:id="@+id/txtGlassTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:text="Glass"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtGlass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Type glass"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rloMainEkstra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/imgEkstra"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="0dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/icons8_pdd_property_128" />
+
+                    <TextView
+                        android:id="@+id/txtEkstraTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:text="Ekstra tilbehør"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtEkstra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Type tilbehør"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lloMainInstruksjoner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/lblInstruksjoner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Kommentar"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/txtInstruksjoner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Instruksjoner/ beskrivelse"
+                        android:textAlignment="viewStart"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imgHide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1A2558"
+            android:visibility="visible"
+            app:srcCompat="@drawable/bartender_icon_v3" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
